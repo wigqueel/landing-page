@@ -10,7 +10,7 @@ gulp.task('sass', function(){
   return gulp.src('app/scss/style.scss')
   .pipe(sass()) // compile SCSS to CSSg
     .pipe(cssnano()) // minify CSS
-    .pipe(gulp.dest('doc')); // put final CSS in dist folder
+    .pipe(gulp.dest('docs')); // put final CSS in dist folder
 });
 
 // JS task: concatenates and uglifies JS files to script.js
@@ -18,7 +18,7 @@ gulp.task('js', function(){
   return gulp.src(['app/js/plugins/*.js', 'app/js/*.js'])
   .pipe(concat('all.js'))
   .pipe(uglify())
-  .pipe(gulp.dest('doc'));
+  .pipe(gulp.dest('docs'));
 });
 
 // Watch task: watch SCSS and JS files for changes
