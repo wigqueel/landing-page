@@ -524,17 +524,19 @@ button-2:hover {
 }
 
 .sign-text {
-  justify-content: center;
-  align-items: center;
-  //padding: 3% 5% 8%;
-  display: flex;
+  text-align: center;
   flex-wrap: wrap;
-  color: white;
+  color: #fff;
   padding: 0 20%;
   opacity: .6;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: .64px;
+
+  a{
+    color: #cccccc;
+    text-decoration: underline;
+  }
 }
 
 .terms {
@@ -582,8 +584,15 @@ footer {
   }
   padding-bottom: 50px;
 a{
-  text-decoration: none;
+  color: #282828;
+  //text-decoration: none;
+  cursor: pointer;
 }
+  a:focus, a:hover
+  {
+    color: #100000;
+    text-decoration-line: blink;
+  }
 
   position: relative;
   overflow: hidden;
@@ -647,14 +656,23 @@ a{
   }
 .social-logo
 {
+
   padding-right: 22px;
   filter: grayscale(100%);
   height: auto;
-  img {
+
+  i{
     height: 18px;
 
   }
+
 }
+  .social-logo:hover,
+  .social-logo:focus
+  {
+      color: black;
+
+  }
   form {
     display: flex;
     flex-direction: column;
@@ -696,7 +714,6 @@ a{
   .button-send {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
     background-color: #f16a6d;
-    background-color: #f16a6d;
     border: none;
   }
 
@@ -704,7 +721,7 @@ a{
 
   button:focus,
   button:hover {
-    color: #f16a6d;
+    //color: #f16a6d;
     border-color: currentColor;
     //background-color: white;
     box-shadow: 5px 15px 10px rgba(0, 0, 0, 0.5); /* Параметры тени */
@@ -712,6 +729,7 @@ a{
       color: #f16a6d;
     }
   }
+
 
   li {
     color: #282828;
@@ -733,19 +751,7 @@ a{
     opacity: 0.7;
   }
 
-  /* Set a specific color for each brand */
 
-  /* Facebook */
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-
-  /* Twitter */
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
 .text-input
 {
   border-right: none;
