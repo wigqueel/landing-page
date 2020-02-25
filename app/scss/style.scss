@@ -537,6 +537,11 @@ button-2:hover {
     color: #cccccc;
     text-decoration: underline;
   }
+  a:hover,
+  a:focus
+  {
+    color: #f6f5f3;
+  }
 }
 
 .terms {
